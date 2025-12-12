@@ -124,7 +124,7 @@ void Menu_Transaksi(){
 
     cout << "=========== TRANSAKSI ===========" << "\n";
 
-    string receipt = "===== RINCian Transaksi =====\n";
+    string receipt = "===== Rincian Transaksi =====\n";
 
     while(true){
         cout << "\n" << "Pilih kategori:" << "\n";
@@ -277,3 +277,4 @@ int main (){
     return 0;
 
 }
+
