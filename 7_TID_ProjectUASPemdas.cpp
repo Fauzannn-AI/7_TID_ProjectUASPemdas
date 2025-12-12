@@ -124,7 +124,6 @@ void Menu_Transaksi(){
 
     cout << "=========== TRANSAKSI ===========" << "\n";
 
-    // Accumulate the receipt details for this transaction
     string receipt = "===== RINCian Transaksi =====\n";
 
     while(true){
@@ -168,12 +167,10 @@ void Menu_Transaksi(){
         cout << Banyak << " x " <<  arr[kode-1].Nama << " ditambahkan." << '\n';
         cout << "Subtotal: Rp " << Harga_Item << "\n";
 
-        // Append item line to receipt: "ItemName x Qty - Rp Subtotal"
         receipt += arr[kode-1].Nama + " x " + to_string(Banyak) + " - Rp " + to_string(Harga_Item) + "\n";
     }
         cout << "Total akhir: Rp " << total << "\n";
 
-        // Append total and separator to receipt, then save
         receipt += string("Total Transaksi: Rp ") + to_string(total) + "\n";
         receipt += "------------------------------\n";
 
@@ -278,4 +275,5 @@ void Menu_Utama(){;
 int main (){
     Menu_Utama();
     return 0;
+
 }
